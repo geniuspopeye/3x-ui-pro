@@ -101,6 +101,8 @@ Works via User-Agent detection — one URL, different behavior:
 - **Clash / Mihomo / Stash** → get a ready-to-use `clash.yaml` config
 - **Regular browser / other clients** → get the standard 3x-ui subscription page
 
+In XKeen-UI, use the subscription link directly: proxy-provider requests with an `x-hwid` header receive the raw node list instead of the full YAML profile.
+
 The import link is printed by the script after installation.
 
 ---

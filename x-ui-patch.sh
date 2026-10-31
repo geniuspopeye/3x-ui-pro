@@ -356,8 +356,8 @@ map \$http_user_agent \$is_clash_ua {
     ~*(clash|clashx|clashn|mihomo|stash|surfboard)  1;
     default                                          0;
 }
-map "\$is_clash_ua:\$arg_provider" \$serve_clash_yaml {
-    "1:"    1;
+map "\$is_clash_ua:\$arg_provider:\$http_x_hwid" \$serve_clash_yaml {
+    "1::"   1;
     default 0;
 }
 EOF
